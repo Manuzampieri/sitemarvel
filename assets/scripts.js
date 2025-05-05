@@ -16,14 +16,14 @@ const elemImg4 = document.querySelector(".imgcard4")
 elemMini1.addEventListener("click", trocarTexto)
   
 function trocarTexto() {
-    elemTitulo.innerText = "Amigo da Vizinhança"
-    elemTexto1.innerText = "Atualmente, o Homem-Aranha, também conhecido como Peter Parker, é um dos super-heróis do universo marvel mais conhecido, fazendo muito sucesso com suas diversas versões.."
-    elemTexto2.innerText = "Em sua origem, um garoto, criado pelos tios, genial e impopular no colégio, é picado por uma aranha radioativa e desenvolve força e agilidade proporcionais às de um aracnídeo,"
-    elemTexto3.innerText = "e ao descobrir que um ladrão que ele impediu de escapar foi o assassino de seu tio, Peter Parker decide usar seus poderes para o bem, vivendo através do lema de seu Tio Ben: Com grandes poderes vêm grandes responsabilidades."  
-    elemImg1.src = "asset/imgs/aranha/aranhatraje.avif"
-    elemImg2.src = "assets/imgs/aranha/aranhahq.webp"
-    elemImg3.src = "assets/imgs/aranha/spidermiles.webp"
-    elemImg4.src = "assets/imgs/aranha/aranhaescudo.jpg"
+  elemTitulo.innerText = "Pantera Negra"
+  elemTexto1.innerText = "Pantera Negra, também conhecido como T'Challa, rei protetor da nação de Wakanda, é um herói muitp significativo, po ter sido o primeiro de ascendência africana a ser criado por uma editora tão grande, como a Marvel ."
+  elemTexto2.innerText = "Dono de inuméras HQ's e dois filmes, tem um carinho enorme principalmente por conta do ator que o interpretou em seu primeiro filme para a franquia,"
+  elemTexto3.innerText = "O Pantera Negra é de grande importância para a Marvel por conta de todas as mensagens que ele consegue passar para os telespectadores."
+  elemImg1.src = "assets/imgs/pantera/pantera.webp"
+  elemImg2.src = "assets/imgs/pantera/panteraroxo.webp"
+  elemImg3.src = "assets/imgs//pantera/panterapessoa.jpg"
+  elemImg4.src = "assets/imgs/pantera/panterahq.jpg"
   }
 
   elemMini2.addEventListener("click", trocarTexto2)
@@ -41,14 +41,14 @@ function trocarTexto() {
  elemMini3.addEventListener("click", trocarTexto3)
 
   function trocarTexto3() {
-    elemTitulo.innerText = "Pantera Negra"
-    elemTexto1.innerText = "Pantera Negra, também conhecido como T'Challa, rei protetor da nação de Wakanda, é um herói muitp significativo, po ter sido o primeiro de ascendência africana a ser criado por uma editora tão grande, como a Marvel ."
-    elemTexto2.innerText = "Dono de inuméras HQ's e dois filmes, tem um carinho enorme principalmente por conta do ator que o interpretou em seu primeiro filme para a franquia,"
-    elemTexto3.innerText = "O Pantera Negra é de grande importância para a Marvel por conta de todas as mensagens que ele consegue passar para os telespectadores."
-    elemImg1.src = "assets/imgs/pantera/pantera.webp"
-    elemImg2.src = "assets/imgs/pantera/panteraroxo.webp"
-    elemImg3.src = "assets/imgs//pantera/panterapessoa.jpg"
-    elemImg4.src = "assets/imgs/pantera/panterahq.jpg"
+    elemTitulo.innerText = "Amigo da Vizinhança"
+    elemTexto1.innerText = "Atualmente, o Homem-Aranha, também conhecido como Peter Parker, é um dos super-heróis do universo marvel mais conhecido, fazendo muito sucesso com suas diversas versões.."
+    elemTexto2.innerText = "Em sua origem, um garoto, criado pelos tios, genial e impopular no colégio, é picado por uma aranha radioativa e desenvolve força e agilidade proporcionais às de um aracnídeo,"
+    elemTexto3.innerText = "e ao descobrir que um ladrão que ele impediu de escapar foi o assassino de seu tio, Peter Parker decide usar seus poderes para o bem, vivendo através do lema de seu Tio Ben: Com grandes poderes vêm grandes responsabilidades."  
+    elemImg1.src = "assets/imgs/aranha/aranhatraje.avif"
+    elemImg2.src = "assets/imgs/aranha/aranhahq.webp"
+    elemImg3.src = "assets/imgs/aranha/spidermiles.webp"
+    elemImg4.src = "assets/imgs/aranha/aranhaescudo.jpg"
  }
 
  elemMini4.addEventListener("click", trocarTexto4)
