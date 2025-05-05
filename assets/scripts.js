@@ -20,7 +20,7 @@ function trocarTexto() {
     elemTexto1.innerText = "Atualmente, o Homem-Aranha, também conhecido como Peter Parker, é um dos super-heróis do universo marvel mais conhecido, fazendo muito sucesso com suas diversas versões.."
     elemTexto2.innerText = "Em sua origem, um garoto, criado pelos tios, genial e impopular no colégio, é picado por uma aranha radioativa e desenvolve força e agilidade proporcionais às de um aracnídeo,"
     elemTexto3.innerText = "e ao descobrir que um ladrão que ele impediu de escapar foi o assassino de seu tio, Peter Parker decide usar seus poderes para o bem, vivendo através do lema de seu Tio Ben: Com grandes poderes vêm grandes responsabilidades."  
-    elemImg1.src = "assets/imgs/aranha/aranhatraje.avif"
+    elemImg1.src = "asset/imgs/aranha/aranhatraje.avif"
     elemImg2.src = "assets/imgs/aranha/aranhahq.webp"
     elemImg3.src = "assets/imgs/aranha/spidermiles.webp"
     elemImg4.src = "assets/imgs/aranha/aranhaescudo.jpg"
