@@ -1,11 +1,10 @@
-
 .guia{
     width: 250px;
     height: 100px;
     margin-left: 30px;
 }
-.ordem {
-    background-image: url('imgs/marvel\ todos.jpg'); 
+.topo {
+    background-image: url('../imgs/marvelform.jpeg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,7 +78,7 @@ li ul li {
     display:block;
     width: 100%;
     height: 27px;
-    background-color: rgb(146, 63, 63);
+    background-color: rgb(204, 0, 0);
 }
 
 ul li:hover, ul li:focus-within{
@@ -155,7 +154,10 @@ ul li ul:focus-within{
  }
 .titulo {
     text-align: inherit;
+    /* padding: 1.1875rem; */
     padding-left: 55px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Public Sans', sans-serif;
     font-weight: 700;
     color: #2f3031;
@@ -167,69 +169,56 @@ img {
     height: 150px;
     object-fit: cover;
 }
-h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .linha-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 10px;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .card-container {
-    display: flex;
-    gap: 20px; /* Espaço entre os cards */
-    flex-wrap: wrap; /* Para quebrar linha quando não couber na tela */
-    margin-top: 50px; 
-  }
-  
-  .card {
-    text-decoration: none;
-    color: inherit;
-    width: 200px; /* Ajuste o tamanho conforme quiser */
-    display: block;
-    border: 20px solid #eeecec;
+
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    background-color: #f7f7f7;
     border-radius: 10px;
-    overflow: hidden;
-    background: #ebebeb;
-    box-shadow: 10px 20px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-    filter: opacity(50%);
-  }
-  
-  .card:hover {
-    transform: scale(1.05); /* Animação no hover */
-    filter: opacity(100%);
-  }
-  
-  .card img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .card p {
-    font-size: 14px;
-    margin-top: 10px;
+}
+.form-container h2 {
     text-align: center;
-  }
-  
-  /* Estiliza a barra de rolagem (opcional) */
-  .linha-scroll::-webkit-scrollbar {
-    height: 6px;
-  }
-  
-  li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    color: #000000;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color:#000000
+}
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-a.card {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
 
+.form-container button {
+  padding: 12px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: #d31414;
+}
+
+footer{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    text-align: center;
+  }

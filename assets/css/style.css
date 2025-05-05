@@ -5,7 +5,7 @@
     margin-left: 30px;
 }
 .topo {
-    background-image: url('imgs/marvelnovo.jpg'); 
+    background-image: url('../imgs/marvel.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -301,3 +301,13 @@ p{
     justify-content: flex-start;
     height: 98vh;
   }
+
+  footer{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    text-align: center;
+  }
+
+  
