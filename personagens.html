@@ -23,10 +23,12 @@
 
 <body>
   <script>
+    document.getElementById('link-personagens').addEventListener('click', function() {
     gtag('event', 'click_botao', {
-  'event_category': 'botoes',
-  'event_label': 'personagens'
-});
+  'event_category': 'menu',
+  'event_label': 'personagens',
+    });
+    });
 
   </script>
   
@@ -44,7 +46,7 @@
                     </li>
                     <li><a href="#">Filmes</a>
                         <ul>
-                            <li><a href="personagens.html">Personagens</a></li>
+                            <li><a href="personagens.html" id="link-personagens"><Personagens</a></li>
                             <li><a href="ordemcronologica.html">Ordem Cronológica</a></li>
                         </ul>
                     </li>
