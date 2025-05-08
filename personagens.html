@@ -22,33 +22,6 @@
 </head>
 
 <body>
-  <script>
-    document.getElementById('link-personagens').addEventListener('click', function() {
-    gtag('event', 'click_botao', {
-  'event_category': 'menu',
-  'event_label': 'personagens',
-    });
-});
-document.getElementById('link-home').addEventListener('click', function() {
-    gtag('event', 'click_home', {
-  'event_category': 'menu',
-  'event_label': 'home',
-    });
-});
-document.getElementById('link-formulario').addEventListener('click', function() {
-    gtag('event', 'click_form', {
-  'event_category': 'menu',
-  'event_label': 'formulario',
-    });
-});
-document.getElementById('link-ordem').addEventListener('click', function() {
-    gtag('event', 'click_ordem', {
-  'event_category': 'menu',
-  'event_label': 'ordem',
-    });
-});
-  </script>
-  
   <div class="ordem">
     <nav>
         <div class="logo">
@@ -141,6 +114,32 @@ document.getElementById('link-ordem').addEventListener('click', function() {
                 Enviar mensagem
             </a>
         </div>
+        <script>
+          document.getElementById('link-personagens').addEventListener('click', function() {
+          gtag('event', 'click_botao', {
+        'event_category': 'menu',
+        'event_label': 'personagens',
+          });
+      });
+      document.getElementById('link-home').addEventListener('click', function() {
+          gtag('event', 'click_home', {
+        'event_category': 'menu',
+        'event_label': 'home',
+          });
+      });
+      document.getElementById('link-formulario').addEventListener('click', function() {
+          gtag('event', 'click_form', {
+        'event_category': 'menu',
+        'event_label': 'formulario',
+          });
+      });
+      document.getElementById('link-ordem').addEventListener('click', function() {
+          gtag('event', 'click_ordem', {
+        'event_category': 'menu',
+        'event_label': 'ordem',
+          });
+      });
+        </script>
         <div class="contato-item">
             <h4>E-mail</h4>
             <a href="mailto:exemplo@dominio.com">
