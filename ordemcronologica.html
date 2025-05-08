@@ -20,27 +20,62 @@
     <title>Ordem Cronológica</title>
 </head>
 <body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('link-personagens').addEventListener('click', function() {
+    gtag('event', 'click_botao', {
+  'event_category': 'menu',
+  'event_label': 'personagens',
+    });
+    });
+    document.getElementById('link-home').addEventListener('click', function() {
+    gtag('event', 'click_home', {
+  'event_category': 'menu',
+  'event_label': 'home',
+    });
+});
+document.getElementById('link-formulario').addEventListener('click', function() {
+    gtag('event', 'click_form', {
+  'event_category': 'menu',
+  'event_label': 'formulario',
+    });
+});
+document.getElementById('link-ordem').addEventListener('click', function() {
+    gtag('event', 'click_ordem', {
+  'event_category': 'menu',
+  'event_label': 'ordem',
+    });
+});
+document.getElementById('bnt-submit').addEventListener('click', function() {
+    gtag('event', 'click_lupa', {
+  'event_category': 'menu',
+  'event_label': 'lupa',
+    });
+});
+});
+
+  </script>
     <body>
             <div class="ordem">
               <nav>
                 <div class="logo">
-                    <img src="assets/imgs/marvelred.png" alt="Logo Marvel" class="guia">
+                    <img src="assets/imgs/logo.png" alt="Logo Marvel" class="guia">
                 </div>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Contato</a>
-                    <ul>
-                        <li><a href="formulario.html">Formulário</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Filmes</a>
-                    <ul>
-                        <li><a href="personagens.html">Personagens</a></li>
-                        <li><a href="ordemcronologica.html">Ordem Cronológica</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="index.html" id="link-home">Home</a></li>
+                    <li><a href="#">Contato</a>
+                        <ul>
+                            <li><a href="formulario.html" id="link-formulario">Formulário</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Filmes</a>
+                        <ul>
+                            <li><a href="personagens.html" id="link-personagens">Personagens</a></li>
+                            <li><a href="ordemcronologica.html" id="link-ordem">Ordem Cronológica</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         
     
                 <div class="form">

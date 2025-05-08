@@ -48,29 +48,35 @@ document.getElementById('link-ordem').addEventListener('click', function() {
   'event_label': 'ordem',
     });
 });
+document.getElementById('bnt-submit').addEventListener('click', function() {
+    gtag('event', 'click_lupa', {
+  'event_category': 'menu',
+  'event_label': 'lupa',
+    });
+});
 });
 
   </script>
   <div class="ordem">
     <nav>
-        <div class="logo">
-            <img src="assets/imgs/marvelred.png" alt="Logo Marvel" class="guia">
-        </div>
-        <ul>
-                    <li><a href="index.html" id="link-home">Home</a></li>
-                    <li><a href="#">Contato</a>
-                        <ul>
-                            <li><a href="formulario.html" id="link-formulario">Formulário</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Filmes</a>
-                        <ul>
-                            <li><a href="personagens.html" id="link-personagens"><Personagens</a></li>
-                            <li><a href="ordemcronologica.html" id="link-ordem">Ordem Cronológica</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+      <div class="logo">
+          <img src="assets/imgs/logo.png" alt="Logo Marvel" class="guia">
+      </div>
+      <ul>
+          <li><a href="index.html" id="link-home">Home</a></li>
+          <li><a href="#">Contato</a>
+              <ul>
+                  <li><a href="formulario.html" id="link-formulario">Formulário</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Filmes</a>
+              <ul>
+                  <li><a href="personagens.html" id="link-personagens">Personagens</a></li>
+                  <li><a href="ordemcronologica.html" id="link-ordem">Ordem Cronológica</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
 
 
     <div class="form">
