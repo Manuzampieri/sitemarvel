@@ -25,37 +25,43 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('link-personagens').addEventListener('click', function() {
-        gtag('event', 'click_botao', {
+          gtag('event', 'clique', {
+        'page_location': 'home',
       'event_category': 'menu',
       'event_label': 'personagens',
         });
         });
         document.getElementById('link-home').addEventListener('click', function() {
-        gtag('event', 'click_home', {
+          gtag('event', 'clique', {
+        'page_location': 'home',
       'event_category': 'menu',
       'event_label': 'home',
         });
     });
     document.getElementById('link-formulario').addEventListener('click', function() {
-        gtag('event', 'click_form', {
-      'event_category': 'menu',
-      'event_label': 'formulario',
+     gtag('event', 'clique', {
+        'page_location': 'home',
+         'event_category': 'menu',
+        'event_label': 'formulario',
         });
     });
     document.getElementById('link-ordem').addEventListener('click', function() {
-        gtag('event', 'click_ordem', {
+          gtag('event', 'clique', {
+        'page_location': 'home',
       'event_category': 'menu',
       'event_label': 'ordem',
         });
     });
     document.getElementById('bnt-submit').addEventListener('click', function() {
-        gtag('event', 'click_lupa', {
+        gtag('event', 'clique', {
+        'page_location': 'home',
       'event_category': 'menu',
       'event_label': 'lupa',
         });
     });
       document.getElementById('ler-mais').addEventListener('click', function() {
-        gtag('event', 'click_lermais', {
+          gtag('event', 'clique', {
+        'page_location': 'home',
       'event_category': 'home',
       'event_label': 'lermais',
         });
