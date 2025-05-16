@@ -57,7 +57,7 @@ document.getElementById('bnt-submit').addEventListener('click', function() {
   'event_label': 'lupa',
     });
 });
-document.addEventListener('click', function enviarCliqueCard() {
+document.getElementsByClassName('cards-container').addEventListener('click', function enviarCliqueCard() {
    gtag('event', 'clique', {
   'event_category': 'filme',
   'event_label': 'filme',
