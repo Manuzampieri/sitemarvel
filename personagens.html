@@ -59,11 +59,13 @@ document.getElementById('bnt-submit').addEventListener('click', function() {
   'event_label': 'lupa',
     });
 });
-document.getElementsByClassName('cards-container').addEventListener('click', function abrirModal() {
-   gtag('event', 'clique', {
-  'event_category': 'card',
-  'event_label': 'card',
-    });
+const container = document.getElementsByClassName('cards-container')[0];
+
+container.addEventListener('click', function () {
+  gtag('event', 'clique', {
+    event_category: 'card',
+    event_label: 'card',
+  });
 });
 });
 
