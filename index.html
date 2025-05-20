@@ -41,16 +41,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <img src="assets/imgs/logo.png" alt="Logo Marvel" class="guia">
                 </div>
               <ul>
-  <li><a href="index.html" id="link-home" data-titulo="Home" data-secao="Menu">Home</a></li>
+  <li><a href="index.html" id="link-home" data-titulo="home" data-secao="menu">Home</a></li>
   <li><a href="#" data-titulo="Contato" data-secao="menu">Contato</a>
     <ul>
-      <li><a href="formulario.html" id="link-formulario" data-titulo="Formulário" data-secao="menu">Formulário</a></li>
+      <li><a href="formulario.html" id="link-formulario" data-titulo="formulário" data-secao="menu">Formulário</a></li>
     </ul>
   </li>
   <li><a href="#" data-titulo="Filmes" data-secao="menu">Filmes</a>
     <ul>
-      <li><a href="personagens.html" id="link-personagens" data-titulo="Personagens" data-secao="menu">Personagens</a></li>
-      <li><a href="ordemcronologica.html" id="link-ordem" data-titulo="Ordem Cronológica" data-secao="menu">Ordem Cronológica</a></li>
+      <li><a href="personagens.html" id="link-personagens" data-titulo="personagens" data-secao="menu">Personagens</a></li>
+      <li><a href="ordemcronologica.html" id="link-ordem" data-titulo="ordem cronológica" data-secao="menu">Ordem Cronológica</a></li>
     </ul>
   </li>
 </ul>
@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h3 class="subtitulo">O que você quer saber?</h3>
                 <form action="" method="get" class="form-pesquisa">
                     <input type="search" name="pesquisa" id="pesquisa" placeholder="ex: Soldado Invernal, Ultimato...">
-                    <button type="submit" id="bnt-submit">
+                    <button type="submit" id="bnt-submit" data-titulo="lupa" data-secao="menu"></button>
                       <img src="assets/imgs/lupatrasnparente.png" alt="Pesquisar" class="lupa">
                     </button>
                   </form>
@@ -112,7 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p id="textoDescricao2">Conhecida por suas histórias em quadrinhos e, mais recentemente, por seus filmes de super-heróis.</p>
                     <p id="textoDescricao3">A Marvel é um dos maiores e mais influentes players na indústria de quadrinhos e entretenimento, criando personagens icônicos como Homem de Ferro, Capitão América, Thor, Hulk, entre outros.</p> 
                     <br>
-                    <button class="bn3637 bn37" id="ler-mais">Ler mais...</button>
+                    <button class="bn3637 bn37" id="ler-mais" data-titulo="ler-mais" data-secao="home">Ler mais...</button>
                     
                     <div class="cd">
                         <img src="assets/imgs/marvel todos.jpg" width="" class="imgcard1"> <br>
@@ -163,7 +163,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     link.addEventListener('click', function () {
       const titulo = link.getAttribute('data-titulo');
       const secao = link.getAttribute('data-secao');
-      const clique = link.getAttribute('data-clique');
 
      window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
@@ -171,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     'event_type':'event_custom',
     'custom_title': titulo,
     'custom_section': secao,
-    'custom_type':'clique',
+    'custom_type':'botao',
   });
     });
       });

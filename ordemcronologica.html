@@ -38,20 +38,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="logo">
                     <img src="assets/imgs/marvelred.png" alt="Logo Marvel" class="guia">
                 </div>
-                <ul>
-                    <li><a href="index.html" id="link-home">Home</a></li>
-                    <li><a href="#">Contato</a>
-                        <ul>
-                            <li><a href="formulario.html" id="link-formulario">Formulário</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Filmes</a>
-                        <ul>
-                            <li><a href="personagens.html" id="link-personagens">Personagens</a></li>
-                            <li><a href="ordemcronologica.html" id="link-ordem">Ordem Cronológica</a></li>
-                        </ul>
-                    </li>
-                </ul>
+               <ul>
+  <li><a href="index.html" id="link-home" data-titulo="Home" data-secao="menu">Home</a></li>
+  <li><a href="#" data-titulo="Contato" data-secao="menu">Contato</a>
+    <ul>
+      <li><a href="formulario.html" id="link-formulario" data-titulo="formulário" data-secao="menu">Formulário</a></li>
+    </ul>
+  </li>
+  <li><a href="#" data-titulo="Filmes" data-secao="menu">Filmes</a>
+    <ul>
+      <li><a href="personagens.html" id="link-personagens" data-titulo="personagens" data-secao="menu">Personagens</a></li>
+      <li><a href="ordemcronologica.html" id="link-ordem" data-titulo="ordem cronológica" data-secao="menu">Ordem Cronológica</a></li>
+    </ul>
+  </li>
+</ul>
             </nav>
         
     
@@ -60,7 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h3 class="subtitulo">O que você quer saber?</h3>
                     <form action="" method="get" class="form-pesquisa">
                         <input type="search" name="pesquisa" id="pesquisa" placeholder="ex: Soldado Invernal, Ultimato...">
-                        <button type="submit" id="bnt-submit">
+                        <button type="submit" id="bnt-submit" data-titulo="lupa" data-secao="menu"></button>
                           <img src="assets/imgs/lupatrasnparente.png" alt="Pesquisar" class="lupa">
                         </button>
                       </form>
@@ -68,11 +68,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <h2>Ordem Cronológica</h2>
             <div class="card-container">
-              <a href="#" class="card">
+              <a href="#" class="card" data-titulo="capitão américa: o primeiro vingador" data-secao="card">
                 <img src="assets/imgs/filme/filme1.jpg" alt="Capitão América">
                 <p><strong>1943</strong><br>Capitão América: O Primeiro Vingador</p>
               </a>
-                <a href="#" class="card">
+                <a href="#" class="card" data-titulo="capitã marvel" data-secao="card"></a>>
                 <img src="assets/imgs/filme/filme2.jpg" alt="Capitã Marvel">
                 <p><strong>1995</strong><br>Capitã Marvel</p>
               </a>
@@ -128,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="assets/imgs/filme/filme15.jpg" alt="Capitao America 3">
                 <p><strong>2016</strong><br>Capitão América: Guerra Civil</p>
               </a>
-              <a href="#" class="card">
+              <a href="#" class="card" >
                 <img src="assets/imgs/filme/filme16.jpg" alt="Homem-Aranha">
                 <p><strong>2016</strong><br>Homem-Aranha: De Volta ao Lar </p>
               </a>
@@ -137,28 +137,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p><strong>2016</strong><br>Viúva Negra</p>
               </a> 
               </div>
-            
-                 </body>
-                 <footer>
-                  <section class="contatos">
-                      <div class="contato-item">
-                          <h4>WhatsApp</h4>
-                          <a href="https://wa.me/55XXXXXXXXX" target="_blank">
-                              Enviar mensagem
-                          </a>
-                      </div>
-                      <div class="contato-item">
-                          <h4>E-mail</h4>
-                          <a href="mailto:exemplo@dominio.com">
-                              Enviar E-mail
-                          </a>
-                      </div>
-                              <div class="contato-item">
-                                  <h4>Endereço</h4>
-                                  <address>
-                                      São Paulo - SP
-                                  </address>
-                              </div>
-                  <p>Copyright &copy; 2025 site. Todos os direitos reservados.</p>
-                </footer>
+                <footer>
+        <section class="contatos">
+            <div class="contato-item">
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/55XXXXXXXXX" target="_blank">
+                    Enviar mensagem
+                </a>
+            </div>
+            <div class="contato-item">
+                <h4>E-mail</h4>
+                <a href="mailto:exemplo@dominio.com">
+                    Enviar E-mail
+                </a>
+            </div>
+                    <div class="contato-item">
+                        <h4>Endereço</h4>
+                        <address>
+                            São Paulo - SP
+                        </address>
+                    </div>
+        <p>Copyright &copy; 2025 site. Todos os direitos reservados.</p>
+      </footer>
+      <script>
+  const links = document.querySelectorAll('a[data-titulo]');
+
+  links.forEach(link => {
+    link.addEventListener('click', function () {
+      const titulo = link.getAttribute('data-titulo');
+      const secao = link.getAttribute('data-secao');
+
+     window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'event':'clique',
+    'event_type':'event_custom',
+    'custom_title': titulo,
+    'custom_section': secao,
+    'custom_type':'botao',
+  });
+    });
+      });
+</script>
+</body>
+
 </html>
