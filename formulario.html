@@ -63,7 +63,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h3 class="subtitulo">O que você quer saber?</h3>
                 <form action="" method="get" class="form-pesquisa">
                     <input type="search" name="pesquisa" id="pesquisa" placeholder="ex: Soldado Invernal, Ultimato...">
-                    <button type="submit" id="bnt-submit" data-titulo="lupa" data-secao="menu">
+                     <button type="submit" id="bnt-submit"   id="bnt-submit" data-titulo="lupa" data-secao="home">
                       <img src="assets/imgs/lupatrasnparente.png" alt="Pesquisar" class="lupa">
                     </button>
                   </form>
@@ -81,7 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <label for="Mensagem">Mensagem:</label>
             <textarea id="mensagem"></textarea>
 
-            <button type="submit" id="enviar" data-titulo="Enviar" data-secao="Formulário">Enviar</button>
+            <button type="submit" id="enviar" data-titulo="enviar" data-secao="formulário">Enviar</button>
         </form>
     </section>
        <footer>
@@ -107,10 +107,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Copyright &copy; 2025 site. Todos os direitos reservados.</p>
       </footer>
       <script>
-  const links = document.querySelectorAll('a[data-titulo], button[data-titulo]');
+     const links = document.querySelectorAll('a[data-titulo], button[data-titulo],');
 
   links.forEach(el => {
-    link.addEventListener('click', function () {
+    el.addEventListener('click', function () {
       const titulo = el.getAttribute('data-titulo');
       const secao = el.getAttribute('data-secao');
 
