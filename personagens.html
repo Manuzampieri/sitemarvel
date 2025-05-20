@@ -140,9 +140,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Copyright &copy; 2025 site. Todos os direitos reservados.</p>
       </footer>
       <script>
- const elementos = document.querySelectorAll('a[data-titulo], button[data-titulo]');
+  const links = document.querySelectorAll('a[data-titulo]');
 
-  elementos.forEach(el => {
+  links.forEach(link => {
     link.addEventListener('click', function () {
       const titulo = link.getAttribute('data-titulo');
       const secao = link.getAttribute('data-secao');
