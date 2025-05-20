@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const links = document.querySelectorAll('a[data-titulo], button[data-titulo]');
 
   links.forEach(el => {
-    link.addEventListener('click', function () {
+    el.addEventListener('click', function () {
       const titulo = el.getAttribute('data-titulo');
       const secao = el.getAttribute('data-secao');
 
