@@ -158,12 +158,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Copyright &copy; 2025 site. Todos os direitos reservados.</p>
       </footer>
       <script>
-  const links = document.querySelectorAll('a[data-titulo]');
+  const links = document.querySelectorAll('a[data-titulo], button[data-titulo]');
 
-  links.forEach(link => {
+  links.forEach(el => {
     link.addEventListener('click', function () {
-      const titulo = link.getAttribute('data-titulo');
-      const secao = link.getAttribute('data-secao');
+      const titulo = el.getAttribute('data-titulo');
+      const secao = el.getAttribute('data-secao');
 
      window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
