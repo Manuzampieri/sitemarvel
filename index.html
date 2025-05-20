@@ -40,20 +40,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="logo">
                     <img src="assets/imgs/logo.png" alt="Logo Marvel" class="guia">
                 </div>
-                <ul>
-                    <li><a href="index.html" id="link-home">Home</a></li>
-                    <li><a href="#">Contato</a>
-                        <ul>
-                            <li><a href="formulario.html" id="link-formulario">Formulário</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Filmes</a>
-                        <ul>
-                            <li><a href="personagens.html" id="link-personagens">Personagens</a></li>
-                            <li><a href="ordemcronologica.html" id="link-ordem">Ordem Cronológica</a></li>
-                        </ul>
-                    </li>
-                </ul>
+              <ul>
+  <li><a href="index.html" id="link-home" data-titulo="Home" data-secao="Menu">Home</a></li>
+  <li><a href="#" data-titulo="Contato" data-secao="menu">Contato</a>
+    <ul>
+      <li><a href="formulario.html" id="link-formulario" data-titulo="Formulário" data-secao="menu">Formulário</a></li>
+    </ul>
+  </li>
+  <li><a href="#" data-titulo="Filmes" data-secao="menu">Filmes</a>
+    <ul>
+      <li><a href="personagens.html" id="link-personagens" data-titulo="Personagens" data-secao="menu">Personagens</a></li>
+      <li><a href="ordemcronologica.html" id="link-ordem" data-titulo="Ordem Cronológica" data-secao="menu">Ordem Cronológica</a></li>
+    </ul>
+  </li>
+</ul>
             </nav>
     
 
@@ -156,6 +156,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
         <p>Copyright &copy; 2025 site. Todos os direitos reservados.</p>
       </footer>
+      <script>
+  const links = document.querySelectorAll('a[data-titulo]');
+
+  links.forEach(link => {
+    link.addEventListener('click', function () {
+      const titulo = link.getAttribute('data-titulo');
+      const secao = link.getAttribute('data-secao');
+      const clique = link.getAttribute('data-clique');
+
+     window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'event':'clique',
+    'event_type':'event_custom',
+    'custom_title': titulo,
+    'custom_section': secao,
+    'custom_type':'clique',
+  });
+    });
+      });
+</script>
 </body>
 
 </html>
